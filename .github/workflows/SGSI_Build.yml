@@ -1,8 +1,11 @@
 name: SGSI_Build
 
 on:
-  watch:
-    types: [started]
+  workflow_dispatch:
+
+defaults:
+  run:
+    shell: bash
 
 jobs:
   build:
